@@ -14,7 +14,7 @@ const Navbar = () => {
   const [isOpen, toggleBurger] = useState(false);
 
   return (
-    <nav className='bg-white py-2.5 dark:bg-gray-900/70 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 backdrop-blur-lg'>
+    <nav className='bg-white py-2.5 dark:bg-sky-800/70 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 backdrop-blur-lg'>
       <div className='max-w-7xl container flex flex-wrap items-center justify-between mx-auto relative px-6'>
         <a href='/' className='flex items-center'>
           <img
