@@ -6,8 +6,8 @@ import '../App.css';
 
 const navbarItems = [
   { name: 'HJEM', path: '/' },
-  { name: 'OM OSS', path: '/omoss' },
-  { name: 'KONTAKT', path: '/kontakt' },
+  { name: 'OM OSS', path: '/omoss#' },
+  { name: 'KONTAKT', path: '/kontakt#' },
 ];
 
 const Navbar = () => {
