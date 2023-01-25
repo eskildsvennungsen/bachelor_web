@@ -1,6 +1,7 @@
-import { React, useState } from 'react';
+import { React, useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
 import Logo from '../result.svg'
+import LogoColored from '../logo_coloured.svg'
 import '../App.css'
 
 const navbarItems = [
@@ -11,12 +12,22 @@ const navbarItems = [
 
 const Navbar = () => {
     const [isOpen, toggleBurger] = useState(false);
+    const [mode, setMode] = useState('');
+
+    useEffect(() => {
+        window.matchMedia('(prefers-color-scheme: dark)')
+          .addEventListener('change', event => {
+            const colorScheme = event.matches ? "dark" : "light";
+            console.log(colorScheme); // "dark" or "light"
+            setMode(colorScheme);
+          });
+      }, []);
 
     return(
-        <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <nav className="bg-white px-6 sm:px-6 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-7xl container flex flex-wrap items-center justify-between mx-auto">
                 <a href="/" className="flex items-center">
-                    <img src={Logo} className="h-6 mr-3 sm:h-9" alt="Logo"/>
+                    <img src={window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? Logo : LogoColored} className="h-6 mr-3 sm:h-9" alt="Logo"/>
                 </a>
                 <div className="flex md:order">
                     <button onClick={() => (toggleBurger(!isOpen))} data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -33,7 +44,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className={isOpen ? "" : "sr-only"} onClick={() => toggleBurger(!isOpen)}>
-                <ul className="flex flex-row p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:hidden md:mt-0 md:text-lg md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul className="flex flex-grow justify-center p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:hidden md:mt-0 md:text-lg md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     {navbarItems.map(link => (<li key={link.name}><Link to={link.path} className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{link.name}</Link></li>))}
                 </ul>
             </div>

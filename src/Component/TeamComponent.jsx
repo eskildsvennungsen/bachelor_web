@@ -1,75 +1,95 @@
 import solheim from '../img/solheim.jpg';
 import eskild from '../img/eskild.jpeg';
+import andri from '../img/Andri.jpg';
 
 const people = [
     {
       name: 'Javier A. Sossa',
-      role: 'Test ingeniør',
+      role: 'Testansvarlig & hardware lead',
       imageUrl:
         'https://media.licdn.com/dms/image/C4E03AQGDMA6r8ssyxg/profile-displayphoto-shrink_800_800/0/1611856828111?e=1680134400&v=beta&t=OyocwUZnPtnOn_EDP_ZNF8YzlSVRrC7zXIItBEqhgqM',
-      twitterUrl: '#',
       linkedinUrl: 'https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/',
     },
     {
         name: 'Dag H. Halvorsen',
-        role: 'Produksjons sjef',
+        role: 'Produksjon- & prototype-ansvarlig',
         imageUrl:
           'https://media.licdn.com/dms/image/C4E03AQFsBk-5d6GFnA/profile-displayphoto-shrink_800_800/0/1638435575075?e=1680134400&v=beta&t=NpKDMDmWi1E4BEqOue-kXR-ak3MTjCqcQLn5SFZIu9w',
-        twitterUrl: '#',
         linkedinUrl: 'https://www.linkedin.com/in/dag-henning-halvorsen-5b7903173/',
     },
     {
         name: 'Kristoffer Solheim',
-        role: 'System ingeniør',
+        role: 'Systemingeniør & Communication-lead',
         imageUrl: solheim,
-        twitterUrl: '#',
-        linkedinUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/kristoffer-solheim-794a10259/',
       },
       {
         name: 'Mehdi Chamran',
-        role: 'Dokumentasjons ansvarlig',
+        role: 'Dokumentasjon- & HMS-ansvarlig',
         imageUrl:
           'https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/327156799_1207224003566570_5505488058552188386_n.png?stp=dst-png_p1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=xlI1sJOdrIEAX9sxnnf&_nc_ht=scontent-arn2-1.xx&oh=03_AdRZpPI99PxMhQDQu2Emk8nFfJRGpIHYykwwJ9YKe0azfw&oe=63F71990',
-        twitterUrl: '#',
         linkedinUrl: '#',
       },
       {
         name: 'Andri V. Tryggvason',
-        role: 'Supreme leader',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-        twitterUrl: '#',
+        role: 'Prosjektleder & dokumentansvarlig',
+        imageUrl: andri, 
         linkedinUrl: '#',
       },
       {
         name: 'Eskild D. Svennungsen',
-        role: 'Økonomi ansvarlig',
+        role: 'Økonomiansvarlig & software lead',
         imageUrl: eskild,
-        twitterUrl: '#',
-        linkedinUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/eskildsvennungsen/',
     },
   ]
   
   export default function Team() {
     return (
-      <div className="bg-amber-50">
+      <div className="isolate bg-white">
+        <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <svg
+          className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          viewBox="0 0 1155 400"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)"
+            fillOpacity=".3"
+            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z"
+          />
+          <defs>
+            <linearGradient
+              id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533"
+              x1="1155.49"
+              x2="-78.208"
+              y1=".177"
+              y2="474.645"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#9089FC" />
+              <stop offset={1} stopColor="#FF80B5" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
         <div className="mx-auto max-w-7xl py-24 px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">
             <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Gruppe 5</h2>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">Gruppe 5</h2>
               <p className="text-xl text-gray-700">
                 Vi er holdt, hull- og lekasje deteksjons teknologi. Gjennom vår semesteret på USN Kongsberg skal vi ta for oss problemstillingen gitt av Tronrud Engineering.
               </p>
             </div>
             <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
               {people.map((person) => (
-                <li key={person.name} className="rounded-lg bg-gray-900 py-10 px-6 text-center xl:px-10 xl:text-left">
+                <li key={person.name} className="rounded-lg bg-gray-800/[.05] hover:bg-gray-700/[.10] py-10 px-6 text-center xl:px-10 xl:text-left ">
                   <div className="space-y-6 xl:space-y-10">
                     <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src={person.imageUrl} alt="" />
                     <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                       <div className="space-y-1 text-lg font-medium leading-6">
-                        <h3 className="text-white">{person.name}</h3>
-                        <p className="text-indigo-400">{person.role}</p>
+                        <h3 className="text-gray-900">{person.name}</h3>
+                        <p className="text-indigo-600">{person.role}</p>
                       </div>
   
                       <ul className="flex justify-center space-x-5">
