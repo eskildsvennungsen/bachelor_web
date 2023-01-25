@@ -1,0 +1,100 @@
+import solheim from '../img/solheim.jpg';
+import eskild from '../img/eskild.jpeg';
+
+const people = [
+    {
+      name: 'Javier A. Sossa',
+      role: 'Test ingeniør',
+      imageUrl:
+        'https://media.licdn.com/dms/image/C4E03AQGDMA6r8ssyxg/profile-displayphoto-shrink_800_800/0/1611856828111?e=1680134400&v=beta&t=OyocwUZnPtnOn_EDP_ZNF8YzlSVRrC7zXIItBEqhgqM',
+      twitterUrl: '#',
+      linkedinUrl: 'https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/',
+    },
+    {
+        name: 'Dag H. Halvorsen',
+        role: 'Produksjons sjef',
+        imageUrl:
+          'https://media.licdn.com/dms/image/C4E03AQFsBk-5d6GFnA/profile-displayphoto-shrink_800_800/0/1638435575075?e=1680134400&v=beta&t=NpKDMDmWi1E4BEqOue-kXR-ak3MTjCqcQLn5SFZIu9w',
+        twitterUrl: '#',
+        linkedinUrl: 'https://www.linkedin.com/in/dag-henning-halvorsen-5b7903173/',
+    },
+    {
+        name: 'Kristoffer Solheim',
+        role: 'System ingeniør',
+        imageUrl: solheim,
+        twitterUrl: '#',
+        linkedinUrl: '#',
+      },
+      {
+        name: 'Mehdi Chamran',
+        role: 'Dokumentasjons ansvarlig',
+        imageUrl:
+          'https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/327156799_1207224003566570_5505488058552188386_n.png?stp=dst-png_p1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=xlI1sJOdrIEAX9sxnnf&_nc_ht=scontent-arn2-1.xx&oh=03_AdRZpPI99PxMhQDQu2Emk8nFfJRGpIHYykwwJ9YKe0azfw&oe=63F71990',
+        twitterUrl: '#',
+        linkedinUrl: '#',
+      },
+      {
+        name: 'Andri V. Tryggvason',
+        role: 'Supreme leader',
+        imageUrl:
+          'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+        twitterUrl: '#',
+        linkedinUrl: '#',
+      },
+      {
+        name: 'Eskild D. Svennungsen',
+        role: 'Økonomi ansvarlig',
+        imageUrl: eskild,
+        twitterUrl: '#',
+        linkedinUrl: '#',
+    },
+  ]
+  
+  export default function Team() {
+    return (
+      <div className="bg-amber-50">
+        <div className="mx-auto max-w-7xl py-24 px-6 lg:px-8 lg:py-24">
+          <div className="space-y-12">
+            <div className="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Gruppe 5</h2>
+              <p className="text-xl text-gray-700">
+                Vi er holdt, hull- og lekasje deteksjons teknologi. Gjennom vår semesteret på USN Kongsberg skal vi ta for oss problemstillingen gitt av Tronrud Engineering.
+              </p>
+            </div>
+            <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
+              {people.map((person) => (
+                <li key={person.name} className="rounded-lg bg-gray-900 py-10 px-6 text-center xl:px-10 xl:text-left">
+                  <div className="space-y-6 xl:space-y-10">
+                    <img className="mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56" src={person.imageUrl} alt="" />
+                    <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
+                      <div className="space-y-1 text-lg font-medium leading-6">
+                        <h3 className="text-white">{person.name}</h3>
+                        <p className="text-indigo-400">{person.role}</p>
+                      </div>
+  
+                      <ul className="flex justify-center space-x-5">
+                        
+                        <li>
+                          <a href={person.linkedinUrl} className="text-gray-400 hover:text-gray-300">
+                            <span className="sr-only">LinkedIn</span>
+                            <svg className="h-5 w-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                              <path
+                                fillRule="evenodd"
+                                d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    )
+  }
+  
