@@ -1,36 +1,14 @@
 import React from 'react';
-import Hero from '../Component/HeroComponent'
+import Hero from '../Component/HeroComponent';
+import Blog from '../Component/BlogComponent';
 
 const Hjem = () => {
-    return (
-      <React.Fragment>
+  return (
+    <React.Fragment>
       <Hero />
-      <div className='max-w-7xl border mx-auto'>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-      </div>
-      </React.Fragment>
-    );
+      <Blog />
+    </React.Fragment>
+  );
 };
 
 export default Hjem;
-  

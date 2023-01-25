@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Genos:wght@200;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Genos:wght@200;400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,61 +10,61 @@
   margin: 0;
   padding: 0;
 }
-html, body {
-
-    font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+html,
+body {
+  font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2 {
-    font-family: "Genos";
+h1,
+h2 {
+  font-family: 'Genos';
 }
 
 .Container {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 .Navbar a {
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 .Navbar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .Navbar a:active {
-    color:rgb(235, 235, 235);
+  color: rgb(235, 235, 235);
 }
 .Navbar {
-    width: 100vw;
-    height: 4rem;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    position: sticky;
-    top: 0;
+  width: 100vw;
+  height: 4rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
 }
 .Navbar-left {
-    display: flex;
+  display: flex;
 }
 .Navbar-right {
-    display: flex;
-    position: absolute;
-    right: 0px;
+  display: flex;
+  position: absolute;
+  right: 0px;
 }
 .Content {
-    background-color: #f5f5f5;
-    min-width: 70vw;
-    min-height: calc(150vh - 4rem);
-    box-shadow: 0px 0px 10px #66666666;
+  background-color: #f5f5f5;
+  min-width: 70vw;
+  min-height: calc(150vh - 4rem);
+  box-shadow: 0px 0px 10px #66666666;
 }
