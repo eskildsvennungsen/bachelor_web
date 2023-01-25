@@ -1,6 +1,7 @@
 import solheim from '../img/solheim.jpg';
 import eskild from '../img/eskild.jpeg';
 import andri from '../img/Andri.jpg';
+import mehdi from '../img/Mehdi.jpg';
 
 const people = [
   {
@@ -26,8 +27,7 @@ const people = [
   {
     name: 'Mehdi Chamran',
     role: 'Dokumentasjon- & HMS-ansvarlig',
-    imageUrl:
-      'https://scontent-arn2-1.xx.fbcdn.net/v/t1.15752-9/327156799_1207224003566570_5505488058552188386_n.png?stp=dst-png_p1080x2048&_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=xlI1sJOdrIEAX9sxnnf&_nc_ht=scontent-arn2-1.xx&oh=03_AdRZpPI99PxMhQDQu2Emk8nFfJRGpIHYykwwJ9YKe0azfw&oe=63F71990',
+    imageUrl: mehdi,
     linkedinUrl: '#',
   },
   {
@@ -73,7 +73,7 @@ export default function Team() {
           </defs>
         </svg>
       </div>
-      <div className='mx-auto max-w-7xl py-24 px-6 lg:px-8 lg:py-24'>
+      <div className='mx-auto max-w-7xl py-24 lg:py-24 px-6'>
         <div className='space-y-12'>
           <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
             <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl'>Gruppe 5</h2>
