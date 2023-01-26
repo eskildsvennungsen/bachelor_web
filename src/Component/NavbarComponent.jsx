@@ -1,12 +1,12 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
-import LogoColored from '../logo_coloured.svg';
+import LogoColored from '../logo_coloured_tronrud_hl.svg';
 import '../App.css';
 
 const navbarItems = [
   { name: 'HJEM', path: '/' },
   { name: 'OM OSS', path: '/omoss#' },
-  { name: 'KONTAKT', path: '/kontakt#' },
+  /*{ name: 'KONTAKT', path: '/kontakt#' },*/
 ];
 
 const Navbar = () => {
