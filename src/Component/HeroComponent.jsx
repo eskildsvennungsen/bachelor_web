@@ -40,7 +40,7 @@ export default function Hero() {
                 <span className='underline decoration-red-500 decoration-2 bg-red-100 hover:bg-red-200'>
                   <a href='https://www.tronrud.no/en/'>Tronrud</a>
                 </span>{' '}
-                å legge frem en løsning for å detektere hull og lekasjer i snacks poser.
+                å legge frem en løsning for å detektere hull og lekasjer i snacksposer.
               </p>
               <div className='mt-10 flex items-center justify-center gap-x-6'>
                 <a
