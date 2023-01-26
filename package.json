@@ -10,12 +10,11 @@
     "@testing-library/user-event": "^13.5.0",
     "babel-eslint": "^10.1.0",
     "bootstrap": "^5.2.3",
-    "gatsby": "^5.5.0",
     "gatsby-plugin-gatsby-cloud": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.7.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
