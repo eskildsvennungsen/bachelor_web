@@ -1,24 +1,26 @@
+import solheim from '../img/solheim.jpg';
+import javBowling from '../img/javBowling.jpeg';
+
 const posts = [
-  /*
+  
   {
-    title: 'Boost your conversion rate',
+    title: 'Teambuilding - Bowling!',
     href: '#',
-    category: { name: 'Article', href: '#' },
+    category: { name: 'Blogginnlegg', href: '#' },
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
+      'På fredag hadde vi vår første teambuilding. Denne ble arrangert av Mehdi og valget falt på bowling. Til tross for at dette er en lavterskelaktivitet, varta gutta opp med idrettsprestasjoner av rang, et godt eksempel på dette er Javier sin Turkey. Med god mat og drikke var forholdene ideelle for en bra kveld, noe det også ble. 10/10 would do again!',
+    date: '23. jan, 2020',
+    datetime: '2022-01-23',
     imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    readingTime: '6 min',
+      javBowling,
     author: {
-      name: 'Roel Aufderehar',
+      name: 'Kristoffer Solheim',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        solheim,
     },
   },
-  */
+  
 ];
 
 export default function Blog() {
@@ -64,8 +66,8 @@ export default function Blog() {
                     </p>
                     <div className='flex space-x-1 text-sm text-gray-500'>
                       <time dateTime={post.datetime}>{post.date}</time>
-                      <span aria-hidden='true'>&middot;</span>
-                      <span>{post.readingTime} read</span>
+                      
+                      
                     </div>
                   </div>
                 </div>
