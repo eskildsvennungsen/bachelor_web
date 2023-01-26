@@ -78,7 +78,7 @@ export default function Team() {
           <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
             <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl'>Gruppe 5</h2>
             <p className='text-xl text-gray-700 max-w-3xl'>
-              Vi er holdt, hull- og lekasje deteksjons teknologi. Gjennom vår-semesteret på USN Kongsberg skal vi ta for
+              Vi er HOLDT, hull- og lekasje deteksjons teknologi. Gjennom vår-semesteret på USN Kongsberg skal vi ta for
               oss problemstillingen gitt av Tronrud Engineering.
             </p>
           </div>
