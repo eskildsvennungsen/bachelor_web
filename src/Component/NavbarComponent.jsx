@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className={isOpen ? '' : 'sr-only'} onClick={() => toggleBurger(!isOpen)}>
-        <ul className='flex flex-grow justify-begin px-2 mt-2 md:flex-row md:space-x-8 md:hidden md:mt-0 md:text-lg md:font-medium md:border-0 border-t border-gray-300'>
+        <ul className='flex flex-grow justify-end px-2 mt-2 md:flex-row md:space-x-8 md:hidden md:mt-0 md:text-lg md:font-medium md:border-0 border-t border-gray-300'>
           {navbarItems.map((link) => (
             <li key={link.name}>
               <Link
