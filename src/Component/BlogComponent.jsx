@@ -2,7 +2,6 @@ import solheim from '../img/solheim.jpg';
 import javBowling from '../img/javBowling.jpeg';
 
 const posts = [
-  
   {
     title: 'Teambuilding - Bowling!',
     href: '#',
@@ -20,7 +19,6 @@ const posts = [
         solheim,
     },
   },
-  
 ];
 
 export default function Blog() {
@@ -33,7 +31,7 @@ export default function Blog() {
             Her kommer det innlegg om hva vi som gruppe gjør og oppnår under bachelor-prosjektet.
           </p>
         </div>
-        <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3'>
+        <div className='mx-auto mt-12 grid gap-5 max-w-md md:max-w-3xl lg:max-w-none grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
           {posts.map((post) => (
             <div key={post.title} className='flex flex-col overflow-hidden rounded-lg shadow-lg'>
               <div className='flex-shrink-0'>
