@@ -6,39 +6,39 @@ import mehdi from '../img/Mehdi.jpg';
 const people = [
   {
     name: 'Javier A. Sossa',
-    role: 'Testansvarlig & hardware lead',
+    role: 'Test- & maskinvareansvarlig',
     imageUrl:
       'https://media.licdn.com/dms/image/C4E03AQGDMA6r8ssyxg/profile-displayphoto-shrink_800_800/0/1611856828111?e=1680134400&v=beta&t=OyocwUZnPtnOn_EDP_ZNF8YzlSVRrC7zXIItBEqhgqM',
     linkedinUrl: 'https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/',
   },
   {
     name: 'Dag H. Halvorsen',
-    role: 'Produksjon- & prototype-ansvarlig',
+    role: 'Produksjon- & prototypeansvarlig',
     imageUrl:
       'https://media.licdn.com/dms/image/C4E03AQFsBk-5d6GFnA/profile-displayphoto-shrink_800_800/0/1638435575075?e=1680134400&v=beta&t=NpKDMDmWi1E4BEqOue-kXR-ak3MTjCqcQLn5SFZIu9w',
     linkedinUrl: 'https://www.linkedin.com/in/dag-henning-halvorsen-5b7903173/',
   },
   {
     name: 'Kristoffer Solheim',
-    role: 'Systemingeniør & Communication-lead',
+    role: 'Systemingeniør & kommunikasjonsansvarlig',
     imageUrl: solheim,
     linkedinUrl: 'https://www.linkedin.com/in/kristoffer-solheim-794a10259/',
   },
   {
     name: 'Mehdi Chamran',
-    role: 'Dokumentasjon- & HMS-ansvarlig',
+    role: 'Dokumentasjon- & risikoansvarlig',
     imageUrl: mehdi,
     linkedinUrl: '#',
   },
   {
     name: 'Andri V. Tryggvason',
-    role: 'Prosjektleder & dokumentansvarlig',
+    role: 'Prosjektleder & produkteier',
     imageUrl: andri,
     linkedinUrl: '#',
   },
   {
     name: 'Eskild D. Svennungsen',
-    role: 'Økonomiansvarlig & software lead',
+    role: 'Programvare- og økonomiansvarlig',
     imageUrl: eskild,
     linkedinUrl: 'https://www.linkedin.com/in/eskildsvennungsen/',
   },
