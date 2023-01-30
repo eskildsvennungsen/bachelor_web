@@ -9,7 +9,7 @@ const posts = [
     category: { name: 'Blogginnlegg', href: '#' },
     description:
       'På fredag hadde vi vår første teambuilding. Denne ble arrangert av Mehdi og valget falt på bowling. Til tross for at dette er en lavterskelaktivitet, varta gutta opp med idrettsprestasjoner av rang, et godt eksempel på dette er Javier sin Turkey. Med god mat og drikke var forholdene ideelle for en bra kveld, noe det også ble. 10/10 would do again!',
-    date: '23. jan, 2020',
+    date: '23. jan, 2023',
     datetime: '2022-01-23',
     imageUrl:
       javBowling,
@@ -33,7 +33,7 @@ export default function Blog() {
             Her kommer det innlegg om hva vi som gruppe gjør og oppnår under bachelor-prosjektet.
           </p>
         </div>
-        <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3'>
+        <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3 flex flex-row justify-center'>
           {posts.map((post) => (
             <div key={post.title} className='flex flex-col overflow-hidden rounded-lg shadow-lg'>
               <div className='flex-shrink-0'>

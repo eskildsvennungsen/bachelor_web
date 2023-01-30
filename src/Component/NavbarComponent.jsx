@@ -2,7 +2,8 @@ import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoColored from '../logo_coloured_tronrud_hl.svg';
 import '../App.css';
-
+import GitHubLogo from '../img/github-mark.svg'
+ 
 const navbarItems = [
   { name: 'HJEM', path: '/' },
   { name: 'OM OSS', path: '/omoss#' },
@@ -48,7 +49,7 @@ const Navbar = () => {
         </div>
 
         <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ' id='navbar-sticky'>
-          <ul className='flex flex-col py-2 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0'>
+          <ul className='flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0'>
             {navbarItems.map((link) => (
               <li key={link.name}>
                 <Link
@@ -59,22 +60,27 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-7' alt='Git'/></a>
           </ul>
         </div>
       </div>
       <div className={isOpen ? '' : 'sr-only'} onClick={() => toggleBurger(!isOpen)}>
-        <ul className='flex flex-grow justify-end px-2 mt-2 md:flex-row md:space-x-8 md:hidden md:mt-0 md:text-lg md:font-medium md:border-0 border-t border-gray-300'>
+        <ul className='flex flex-row justify-center mt-2 md:hidden border-t border-gray-300'>
           {navbarItems.map((link) => (
             <li key={link.name}>
               <Link
                 to={link.path}
-                className='block pt-2 pl-3 pr-4 text-gray-700 hover:text-red-500 md:hover:text-blue-700 md:p-0 md:hidden'
+                className='block pt-3 pl-5 text-gray-700 hover:text-red-500 md:hover:text-blue-700 md:p-0 md:hidden'
               >
                 {link.name}
               </Link>
             </li>
           ))}
-        </ul>
+          
+          </ul>
+          <span className='flex flex-row justify-end md:hidden -mt-6 pr-8'>
+          <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-7' alt='Git'/></a>
+          </span>
       </div>
     </nav>
   );
