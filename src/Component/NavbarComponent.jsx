@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoColored from '../logo_coloured_tronrud_hl.svg';
 import '../App.css';
-import GitHubLogo from '../img/github-mark.svg'
+import GitHubLogo from '../img/Git-Icon-Black.svg'
  
 const navbarItems = [
   { name: 'HJEM', path: '/' },
@@ -23,7 +23,7 @@ const Navbar = () => {
             alt='Logo'
           />
         </a>
-        <div className='flex md:order'>
+        <div className='flex md:order items-center'>
           <button
             onClick={() => toggleBurger(!isOpen)}
             data-collapse-toggle='navbar-sticky'
@@ -46,10 +46,13 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
+          <span className='md:hidden ml-3 p-1.5 rounded hover:bg-gray-100'>
+            <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-6' alt='Git'/></a>
+          </span>
         </div>
 
         <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ' id='navbar-sticky'>
-          <ul className='flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0'>
+          <ul className='flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0 items-center'>
             {navbarItems.map((link) => (
               <li key={link.name}>
                 <Link
@@ -60,7 +63,9 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-7' alt='Git'/></a>
+            <span className='p-1.5 p-1.5 rounded hover:bg-gray-100'>
+            <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-6' alt='Git'/></a>
+            </span>
           </ul>
         </div>
       </div>
@@ -76,11 +81,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          
-          </ul>
-          <span className='flex flex-row justify-end md:hidden -mt-6 pr-8'>
-          <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-7' alt='Git'/></a>
-          </span>
+          </ul>      
       </div>
     </nav>
   );
