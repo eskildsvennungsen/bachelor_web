@@ -38,7 +38,7 @@ export default function Hero() {
               <p className='mt-6 text-lg leading-8 text-gray-600'>
                 Vi i HOLDT har fått i bachelor-oppgave av{' '}
                 <span className='underline decoration-red-500 decoration-2 bg-red-100 hover:bg-red-200'>
-                  <a href='https://www.tronrud.no/en/'>Tronrud Engineering</a>
+                  <a href='https://www.tronrud.no/'>Tronrud Engineering</a>
                 </span>{' '}
                 å legge frem en løsning for å detektere hull og lekkasjer i snacksposer.
               </p>

@@ -98,7 +98,7 @@ export default function Team() {
 
                     <ul className='flex justify-center space-x-5'>
                       <li>
-                        <a href={person.linkedinUrl} className='text-gray-400 hover:text-gray-300'>
+                        <a href={person.linkedinUrl} className='text-gray-400 hover:text-gray-500'>
                           <span className='sr-only'>LinkedIn</span>
                           <svg className='h-5 w-5' aria-hidden='true' fill='currentColor' viewBox='0 0 20 20'>
                             <path
