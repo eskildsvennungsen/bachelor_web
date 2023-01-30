@@ -2,7 +2,6 @@ import solheim from '../img/solheim.jpg';
 import javBowling from '../img/javBowling.jpeg';
 
 const posts = [
-  
   {
     title: 'Teambuilding - Bowling!',
     href: '#',
@@ -10,7 +9,11 @@ const posts = [
     description:
       'På fredag hadde vi vår første teambuilding. Denne ble arrangert av Mehdi og valget falt på bowling. Til tross for at dette er en lavterskelaktivitet, varta gutta opp med idrettsprestasjoner av rang, et godt eksempel på dette er Javier sin Turkey. Med god mat og drikke var forholdene ideelle for en bra kveld, noe det også ble. 10/10 would do again!',
     date: '23. jan, 2023',
+<<<<<<< HEAD
     datetime: '2022-01-23',
+=======
+    datetime: '2023-01-23',
+>>>>>>> 67997689864e8dcc585e3abbf7edaceca789bcc8
     imageUrl:
       javBowling,
     author: {
@@ -20,7 +23,6 @@ const posts = [
         solheim,
     },
   },
-  
 ];
 
 export default function Blog() {
@@ -33,7 +35,11 @@ export default function Blog() {
             Her kommer det innlegg om hva vi som gruppe gjør og oppnår under bachelor-prosjektet.
           </p>
         </div>
+<<<<<<< HEAD
         <div className='mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3 flex flex-row justify-center'>
+=======
+        <div className='mx-auto mt-12 grid gap-5 max-w-md md:max-w-3xl lg:max-w-none grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+>>>>>>> 67997689864e8dcc585e3abbf7edaceca789bcc8
           {posts.map((post) => (
             <div key={post.title} className='flex flex-col overflow-hidden rounded-lg shadow-lg'>
               <div className='flex-shrink-0'>
