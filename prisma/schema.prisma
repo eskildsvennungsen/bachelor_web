@@ -10,13 +10,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Post {
+model Test {
   id Int @id @default(autoincrement())
-  name String
-  createdAt DateTime @default(now())
+  description String 
+  priority Int
+  version String
+  verification_id String
+  owner User @relation(fields: [owner_id], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  owner_id Int
+  system String
+  
 }
 
 model User {
   id Int @id @default(autoincrement())
-  name String
+  tests Test[]
 }

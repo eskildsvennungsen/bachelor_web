@@ -28,7 +28,7 @@ const Navbar = () => {
             onClick={() => toggleBurger(!isOpen)}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none'
+            className='inline-flex items-center p-1.5 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none'
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >
@@ -46,7 +46,7 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
-          <span className='md:hidden ml-3 p-1.5 rounded hover:bg-gray-100'>
+          <span className='md:hidden ml-3 p-1.5 rounded-lg hover:bg-gray-100 animate-grow'>
             <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-6' alt='Git'/></a>
           </span>
         </div>
