@@ -1,5 +1,6 @@
 import solheim from '../img/solheim.jpg';
 import javBowling from '../img/javBowling.jpeg';
+import logo from '../img/logoForBlogg.jpg';
 
 const posts = [
   {
@@ -11,6 +12,23 @@ const posts = [
     date: '23. jan, 2023',
     datetime: '2023-01-23',
     imageUrl: javBowling,
+    author: {
+      name: 'Kristoffer Solheim',
+      href: '#',
+      imageUrl:
+        solheim,
+    },
+  },
+  {
+    title: 'Teambuilding - Bowling!',
+    href: '#',
+    category: { name: 'Blogginnlegg', href: '#' },
+    description:
+      'Første bachelorpresentasjon vel gjennoomført. Fantastisk godt oppmøte. Nesten full sal med gjester fra flere av instituttene her på huset. Med tilbakemeldinger fra sensorer og veiledere er vi godt rusta for hva vi skal gjøre fremover. GO TEAM!',
+    date: '23. jan, 2022',
+    datetime: '2022-02-01',
+    imageUrl:
+      logo,
     author: {
       name: 'Kristoffer Solheim',
       href: '#',
