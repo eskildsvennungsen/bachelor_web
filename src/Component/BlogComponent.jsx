@@ -20,7 +20,7 @@ const posts = [
     },
   },
   {
-    title: 'Teambuilding - Bowling!',
+    title: 'Første bachelorpresentasjon',
     href: '#',
     category: { name: 'Første bachelorpresentasjon', href: '#' },
     description:
