@@ -22,10 +22,10 @@ const posts = [
   {
     title: 'Teambuilding - Bowling!',
     href: '#',
-    category: { name: 'Blogginnlegg', href: '#' },
+    category: { name: 'Første bachelorpresentasjon', href: '#' },
     description:
       'Første bachelorpresentasjon vel gjennoomført. Fantastisk godt oppmøte. Nesten full sal med gjester fra flere av instituttene her på huset. Med tilbakemeldinger fra sensorer og veiledere er vi godt rusta for hva vi skal gjøre fremover. GO TEAM!',
-    date: '23. jan, 2022',
+    date: '1. feb 2022',
     datetime: '2022-02-01',
     imageUrl:
       logo,
