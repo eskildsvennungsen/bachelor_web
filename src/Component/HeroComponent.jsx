@@ -38,15 +38,15 @@ export default function Hero() {
               <p className='mt-6 text-lg leading-8 text-gray-600'>
                 Vi i HOLDT har fått i bachelor-oppgave av{' '}
                 <span className='underline decoration-red-500 decoration-2 bg-red-100 hover:bg-red-200'>
-                  <a href='https://www.tronrud.no/en/'>Tronrud</a>
+                  <a href='https://www.tronrud.no/en/' target="_blank" rel="noopener noreferrer">Tronrud Engineering</a>
                 </span>{' '}
-                å legge frem en løsning for å detektere hull og lekasjer i snacksposer.
+                å legge frem en løsning for å detektere hull og lekkasjer i snacksposer.
               </p>
               <div className='mt-10 flex items-center justify-center gap-x-6'>
                 <a
                   href='https://www.instagram.com/holdt_bachelor/'
                   className='rounded-md bg-red-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
-                >
+                  target="_blank" rel="noopener noreferrer">
                   Instagram
                 </a>
                 <Link to='/omoss' className='text-base font-semibold leading-7 text-gray-900'>
