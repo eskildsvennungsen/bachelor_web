@@ -1,9 +1,9 @@
 import prototype_illustrasjon from '../img/prototype_ill.jpg';
+import PrototypeBilder from './PrototypeBilderComponent'
 
 export default function Prototype() {
   return (
     <div className="bg-gray-900">
-
       <div className="relative isolate overflow-hidden pt-14">
         <img
           src={ prototype_illustrasjon }
@@ -22,13 +22,13 @@ export default function Prototype() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-32">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
               Prototypen
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-900">
-              I samarbeid med Tronrud Engineering har vi fått muligheten til å produsere vår egen prototype. Prototypen er ennå under utvikling men du vil ha mulighet til å se den i aksjon ved USN Expoen i Kongsberg den 24. mai.
+              I samarbeid med Tronrud Engineering har vi fått muligheten til å produsere vår egen prototype. Prototypen er ennå under utvikling men du vil få mulighet til å se den i aksjon ved USN Expoen i Kongsberg den 24. mai.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
@@ -38,6 +38,7 @@ export default function Prototype() {
                 Les mer om USN Expoen
               </a>
             </div>
+            <PrototypeBilder />
           </div>
         </div>
         <div
