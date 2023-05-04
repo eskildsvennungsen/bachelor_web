@@ -54,7 +54,7 @@ const Navbar = () => {
         <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ' id='navbar-sticky'>
           <ul className='flex flex-col mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium md:border-0 items-center'>
             {navbarItems.map((link) => (
-              <li key={link.name}>
+              <li key={link.id}>
                 <Link
                   to={link.path}
                   className='block py-2 pl-3 pr-4 text-gray-700 md:hover:text-red-500 md:p-0'
