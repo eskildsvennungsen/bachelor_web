@@ -5,8 +5,8 @@ import '../App.css';
 import GitHubLogo from '../img/Git-Icon-Black.svg'
  
 const navbarItems = [
-  { name: 'HJEM', path: '/' },
-  { name: 'OM OSS', path: '/omoss#' },
+  { name: 'HJEM', path: '/grupper/D05-23' },
+  { name: 'OM OSS', path: '/grupper/D05-23/omoss#' },
   /*{ name: 'KONTAKT', path: '/kontakt#' },*/
 ];
 
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className='bg-white/70 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 backdrop-blur-lg'>
       <div className='max-w-7xl container flex flex-wrap items-center justify-between mx-auto relative px-6'>
-        <a href='/' className='flex items-center'>
+        <a href='/grupper/D05-23' className='flex items-center'>
           <img
             src={LogoColored}
             className='h-9'

@@ -49,7 +49,7 @@ export default function Hero() {
                   target="_blank" rel="noopener noreferrer">
                   Instagram
                 </a>
-                <Link to='/omoss' className='text-base font-semibold leading-7 text-gray-900'>
+                <Link to='/grupper/D05-23/omoss' className='text-base font-semibold leading-7 text-gray-900'>
                   Om oss <span aria-hidden='true'>→</span>
                 </Link>
               </div>

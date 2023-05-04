@@ -16,9 +16,9 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route exact path='/' element={<Hjem />}></Route>
-          <Route exact path='/kontakt' element={<Kontakt />}></Route>
-          <Route exact path='/omoss' element={<Omoss />}></Route>
+          <Route exact path='/grupper/D05-23' element={<Hjem />}></Route>
+          <Route exact path='/grupper/D05-23/kontakt' element={<Kontakt />}></Route>
+          <Route exact path='/grupper/D05-23/omoss' element={<Omoss />}></Route>
           <Route exact path='*' element={<PageNotFound />}></Route>
         </Routes>
       </Router>

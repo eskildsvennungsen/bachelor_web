@@ -2,20 +2,20 @@ import solheim from '../img/solheim.jpg';
 import eskild from '../img/eskild.jpeg';
 import andri from '../img/Andri.jpg';
 import mehdi from '../img/Mehdi.jpg';
+import dag from '../img/Dag.jpg';
+import javier from '../img/javier.jpg';
 
 const people = [
   {
     name: 'Javier A. Sossa',
     role: 'Test- & maskinvareansvarlig',
-    imageUrl:
-      'https://media.licdn.com/dms/image/C4E03AQGDMA6r8ssyxg/profile-displayphoto-shrink_800_800/0/1611856828111?e=1680134400&v=beta&t=OyocwUZnPtnOn_EDP_ZNF8YzlSVRrC7zXIItBEqhgqM',
+    imageUrl: javier,  
     linkedinUrl: 'https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/',
   },
   {
     name: 'Dag H. Halvorsen',
     role: 'Produksjon- & prototypeansvarlig',
-    imageUrl:
-      'https://media.licdn.com/dms/image/C4E03AQFsBk-5d6GFnA/profile-displayphoto-shrink_800_800/0/1638435575075?e=1680134400&v=beta&t=NpKDMDmWi1E4BEqOue-kXR-ak3MTjCqcQLn5SFZIu9w',
+    imageUrl: dag,
     linkedinUrl: 'https://www.linkedin.com/in/dag-henning-halvorsen-5b7903173/',
   },
   {
