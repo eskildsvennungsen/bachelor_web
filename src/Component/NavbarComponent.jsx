@@ -7,6 +7,7 @@ import GitHubLogo from '../img/Git-Icon-Black.svg'
 const navbarItems = [
   { name: 'HJEM', path: '/grupper/D05-23' },
   { name: 'OM OSS', path: '/grupper/D05-23/omoss#' },
+  { name: 'PROTOTYPE', path: '/grupper/D05-23/prototype' },
   /*{ name: 'KONTAKT', path: '/kontakt#' },*/
 ];
 
