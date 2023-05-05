@@ -3,7 +3,7 @@ import PrototypeBilder from './PrototypeBilderComponent'
 
 export default function Prototype() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-white">
       <div className="relative isolate overflow-hidden pt-14">
         <img
           src={ prototype_illustrasjon }
@@ -33,13 +33,13 @@ export default function Prototype() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="https://www.usn.no/samarbeid-med-oss/rekruttering-av-studenter/usnexpo/program/usnexpo-kongsberg-2023"
-                className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 mb-10"
               >
                 Les mer om USN Expoen
               </a>
             </div>
-            <PrototypeBilder />
           </div>
+          <PrototypeBilder />
         </div>
         <div
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
