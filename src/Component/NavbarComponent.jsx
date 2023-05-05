@@ -1,11 +1,10 @@
 import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LogoColored from '../logo_coloured_tronrud_hl.svg';
-import '../App.css';
 import GitHubLogo from '../img/Git-Icon-Black.svg'
 import NavDocDropdown from './NavDocDropdownComponent';
 import { navbarItems } from '../PageLinks' 
- 
+import '../App.css';
  
 const Navbar = () => {
   const [isOpen, toggleBurger] = useState(false);

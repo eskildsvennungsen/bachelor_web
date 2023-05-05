@@ -29,6 +29,9 @@ const NavDocDropdown = () => {
       >
         <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
+            <Menu.Item>
+              <a className='hover:bg-gray-100 hover:text-gray-900 text-gray-700 block px-4 py-2 text-sm' href="https://itfag.usn.no/grupper/D05-23/GUI/" target="_blank">GUI</a>
+            </Menu.Item>
             {navDocItems.map((item) => (
               <Menu.Item key={item.id}>
                 {({ active }) => (
@@ -44,6 +47,7 @@ const NavDocDropdown = () => {
                 )}
               </Menu.Item>
             ))}
+
           </div>
         </Menu.Items>
       </Transition>
