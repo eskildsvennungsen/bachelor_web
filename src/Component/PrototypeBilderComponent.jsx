@@ -11,6 +11,7 @@ export default function PrototypeBilder() {
 
   return (
     <>
+      <div className="animate-once animate-fade-up">
       <PhotoAlbum
           layout="rows"
           photos={slides}
@@ -23,6 +24,7 @@ export default function PrototypeBilder() {
           close={() => setIndex(-1)}
           slides={slides}
         />
+    </div>
     </>
   )
 }

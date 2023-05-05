@@ -24,16 +24,16 @@ export default function Prototype() {
         </div>
         <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl animate-once animate-flip-up">
               Prototypen
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-900">
+            <p className="mt-6 text-lg leading-8 text-gray-900 animate-once animate-flip-down">
               I samarbeid med Tronrud Engineering har vi fått muligheten til å produsere vår egen prototype. Prototypen er ennå under utvikling men du vil få mulighet til å se den i aksjon ved USN Expoen i Kongsberg den 24. mai.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="https://www.usn.no/samarbeid-med-oss/rekruttering-av-studenter/usnexpo/program/usnexpo-kongsberg-2023"
-                className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 mb-10"
+                className="rounded-md bg-blue-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 mb-10 animate-once animate-fade"
               >
                 Les mer om USN Expoen
               </a>
