@@ -4,8 +4,8 @@ import LogoColored from '../logo_coloured_tronrud_hl.svg';
 import '../App.css';
 import GitHubLogo from '../img/Git-Icon-Black.svg'
 import NavDocDropdown from './NavDocDropdownComponent';
-
 import { navbarItems } from '../PageLinks' 
+ 
  
 const Navbar = () => {
   const [isOpen, toggleBurger] = useState(false);
