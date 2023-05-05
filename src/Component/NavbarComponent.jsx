@@ -15,7 +15,7 @@ const Navbar = () => {
         <a href='/grupper/D05-23' className='flex items-center'>
           <img
             src={LogoColored}
-            className='h-9'
+            className='h-9 hover:animate-pulse hover:animate-infinite'
             alt='Logo'
           />
         </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <li key={link.name}>
                 <Link
                   to={link.path}
-                  className='block py-2 pl-3 pr-4 text-gray-700 md:hover:text-red-500 md:p-0'
+                  className='block py-2 pl-3 pr-4 text-gray-700 md:hover:text-red-500 md:p-0 hover:animate-pulse hover:animate-infinite'
                 >
                   {link.name}
                 </Link>
