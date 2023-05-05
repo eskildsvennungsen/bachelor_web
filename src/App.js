@@ -4,6 +4,7 @@ import Navbar from './Component/NavbarComponent';
 import Hjem from './Pages/Hjem';
 import Kontakt from './Pages/Kontakt';
 import Omoss from './Pages/Omoss';
+import PrototypePage from './Pages/Prototypen';
 import ScrollToTop from './scrollToTop';
 import PageNotFound from './Pages/404';
 
@@ -17,7 +18,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route exact path='/grupper/D05-23' element={<Hjem />}></Route>
-          // <Route exact path='/grupper/D05-23/kontakt' element={<Kontakt />}></Route>
+          <Route exact path='/grupper/D05-23/prototype' element={<PrototypePage />}></Route>
           <Route exact path='/grupper/D05-23/omoss' element={<Omoss />}></Route>
           <Route exact path='*' element={<PageNotFound />}></Route>
         </Routes>
