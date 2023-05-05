@@ -4,6 +4,6 @@ export const navbarItems = [
   { name: 'PROTOTYPE', path: '/grupper/D05-23/prototype'}
 ];
 export const navDocItems = [
-  { name: 'GUI (Publiseres snart)', path: '#', id: 3 },
+  { name: 'GUI', path: '/grupper/D05-23/GUI', id: 3 },
   { name: 'Rapport (Publiseres 22 mai)', path: '#', id: 4 },
 ];
