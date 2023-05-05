@@ -1,6 +1,5 @@
 {
   "name": "web",
-  "homepage" : "/grupper/D05-23/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

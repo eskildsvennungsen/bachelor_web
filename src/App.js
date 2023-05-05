@@ -17,10 +17,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route exact path='/grupper/D05-23' element={<Hjem />}></Route>
-<<<<<<< HEAD
-=======
           <Route exact path='/grupper/D05-23/prototype' element={<PrototypePage />}></Route>
->>>>>>> e90e38a926cc02218fbc000d4866629102c34ade
           <Route exact path='/grupper/D05-23/omoss' element={<Omoss />}></Route>
           <Route exact path='*' element={<PageNotFound />}></Route>
         </Routes>

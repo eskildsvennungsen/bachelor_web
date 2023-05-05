@@ -1,7 +1,7 @@
 export const navbarItems = [
   { name: 'HJEM', path: '/grupper/D05-23' },
   { name: 'OM OSS', path: '/grupper/D05-23/omoss#' },
-  /*{ name: 'KONTAKT', path: '/kontakt#' },*/
+  { name: 'PROTOTYPE', path: '/grupper/D05-23/prototype'}
 ];
 export const navDocItems = [
   { name: 'GUI (Publiseres snart)', path: '#', id: 3 },
