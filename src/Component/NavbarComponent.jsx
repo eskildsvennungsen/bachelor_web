@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 import LogoColored from '../logo_coloured_tronrud_hl.svg';
 import '../App.css';
 import GitHubLogo from '../img/Git-Icon-Black.svg'
+import NavDocDropdown from './NavDocDropdownComponent';
+import { navbarItems } from '../PageLinks' 
  
-const navbarItems = [
-  { name: 'HJEM', path: '/grupper/D05-23' },
-  { name: 'OM OSS', path: '/grupper/D05-23/omoss#' },
-  { name: 'PROTOTYPE', path: '/grupper/D05-23/prototype' },
-  /*{ name: 'KONTAKT', path: '/kontakt#' },*/
-];
-
+ 
 const Navbar = () => {
   const [isOpen, toggleBurger] = useState(false);
 
@@ -25,6 +21,9 @@ const Navbar = () => {
           />
         </a>
         <div className='flex md:order items-center'>
+        <div className='md:hidden'>
+          <NavDocDropdown />
+        </div>
           <button
             onClick={() => toggleBurger(!isOpen)}
             data-collapse-toggle='navbar-sticky'
@@ -64,6 +63,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <NavDocDropdown />
             <span className='p-1.5 p-1.5 rounded hover:bg-gray-100'>
             <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-6' alt='Git'/></a>
             </span>

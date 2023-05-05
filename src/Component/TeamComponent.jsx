@@ -34,7 +34,7 @@ const people = [
     name: 'Andri V. Tryggvason',
     role: 'Prosjektleder & produkteier',
     imageUrl: andri,
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/andri-tryggvason-83420776/',
   },
   {
     name: 'Eskild D. Svennungsen',
