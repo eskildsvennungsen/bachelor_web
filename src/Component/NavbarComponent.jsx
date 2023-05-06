@@ -11,11 +11,18 @@ const Navbar = () => {
 
   return (
     <nav className='bg-white/70 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 backdrop-blur-lg'>
-      <div className='max-w-7xl container flex flex-wrap items-center justify-between mx-auto relative px-6'>
-        <a href='/grupper/D05-23' className='flex items-center'>
+      <div className='max-w-7xl container flex flex-wrap items-center justify-between mx-auto relative px-3'>
+        <a href='/grupper/D05-23' className='flex items-center hidden md:block'>
           <img
             src={LogoColored}
             className='h-9 hover:animate-pulse hover:animate-infinite'
+            alt='Logo'
+          />
+        </a>
+        <a href='/grupper/D05-23' className='flex items-center md:hidden'>
+          <img
+            src={LogoColored}
+            className='h-3 hover:animate-pulse hover:animate-infinite'
             alt='Logo'
           />
         </a>
@@ -27,7 +34,7 @@ const Navbar = () => {
             onClick={() => toggleBurger(!isOpen)}
             data-collapse-toggle='navbar-sticky'
             type='button'
-            className='inline-flex items-center p-1.5 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none'
+            className='inline-flex items-center pl-1.5 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none'
             aria-controls='navbar-sticky'
             aria-expanded='false'
           >
@@ -45,7 +52,7 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
-          <span className='md:hidden ml-3 p-1.5 rounded-lg hover:bg-gray-100 animate-grow'>
+          <span className='md:hidden ml-3 p-1.5 rounded-lg hover:bg-gray-100 animate-grow hidden md:block'>
             <a href='https://github.com/eskildsvennungsen/bachelor_web'><img src={GitHubLogo} className='h-6' alt='Git'/></a>
           </span>
         </div>
@@ -56,7 +63,7 @@ const Navbar = () => {
               <li key={link.name}>
                 <Link
                   to={link.path}
-                  className='block py-2 pl-3 pr-4 text-gray-700 md:hover:text-red-500 md:p-0 hover:animate-pulse hover:animate-infinite'
+                  className='block py-2 pl-3 pr-4 text-base font-black text-gray-700 md:hover:text-red-500 md:p-0 hover:animate-pulse hover:animate-infinite'
                 >
                   {link.name}
                 </Link>
