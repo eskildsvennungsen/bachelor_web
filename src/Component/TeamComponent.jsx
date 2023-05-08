@@ -10,37 +10,45 @@ const people = [
     name: 'Javier A. Sossa',
     role: 'Test- & maskinvareansvarlig',
     imageUrl: javier,  
+    email: 'javieralvarez9803@gmail.com',
     linkedinUrl: 'https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/',
   },
   {
     name: 'Dag H. Halvorsen',
     role: 'Produksjon- & prototypeansvarlig',
     imageUrl: dag,
+    email: 'daghhalvorsen@outlook.com',
     linkedinUrl: 'https://www.linkedin.com/in/dag-henning-halvorsen-5b7903173/',
   },
   {
     name: 'Kristoffer Solheim',
     role: 'Systemingeniør & kommunikasjonsansvarlig',
     imageUrl: solheim,
+    email: 'kristoffer@solheim.in',
     linkedinUrl: 'https://www.linkedin.com/in/kristoffer-solheim-794a10259/',
+    githubUrl: 'https://github.com/krso1002',
   },
   {
     name: 'Mehdi Chamran',
     role: 'Dokumentasjon- & risikoansvarlig',
     imageUrl: mehdi,
-    linkedinUrl: '#',
+    email: 'mehdi1996@live.no',
   },
   {
     name: 'Andri V. Tryggvason',
     role: 'Prosjektleder & produkteier',
     imageUrl: andri,
+    email: 'andri@arivarton.com',
     linkedinUrl: 'https://www.linkedin.com/in/andri-tryggvason-83420776/',
+    githubUrl: 'https://github.com/arivarton',
   },
   {
     name: 'Eskild D. Svennungsen',
     role: 'Programvare- og økonomiansvarlig',
     imageUrl: eskild,
+    email: 'eskildsvennungsen@gmail.com',
     linkedinUrl: 'https://www.linkedin.com/in/eskildsvennungsen/',
+    githubUrl: 'https://github.com/eskildsvennungsen',
   },
 ];
 
@@ -75,7 +83,7 @@ export default function Team() {
       </div>
       <div className='mx-auto max-w-7xl py-24 lg:py-24 px-6'>
         <div className='space-y-12'>
-          <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
+          <div>
             <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl text-center animate-once animate-flip-up'>Gruppe 5</h2>
             <p className='mt-6 text-lg leading-8 text-gray-900 text-center animate-once animate-flip-down'>
               Vi er HOLDT, hull- og lekkasje deteksjons teknologi. Gjennom vår-semesteret på USN Kongsberg skal vi ta for
@@ -86,16 +94,21 @@ export default function Team() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className='rounded-lg bg-blue-600/[.06] hover:bg-blue-300/[.15] py-10 px-6 text-center xl:px-10 xl:text-left animate-flip-down animate-once'
+                className='rounded-lg bg-blue-600/[.06] hover:bg-blue-300/[.15] py-10 px-6 text-center xl:px-10 animate-flip-down animate-once'
               >
                 <div className='space-y-6 xl:space-y-10'>
                   <img className='mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56 border-solid border-4 border-gray-400/[.10]' src={person.imageUrl} alt='' />
-                  <div className='space-y-2 xl:flex xl:items-center xl:justify-between'>
+                  <div className='space-y-2'>
                     <div className='space-y-1 text-lg font-medium leading-6'>
                       <p className='text-sm text-red-900 font-bold'>{person.role}</p>
                       <h3 className='text-gray-900 mb-0 pb-0 font-bold'>{person.name}</h3>
-                      <p className='text-xs text-gray-600'>andri@arivarton.com</p>
+
+                      {person.email && (
+                        <p className='text-xs text-gray-600'>{ person.email }</p>
+                      )}
+
                     <ul className='flex justify-center md:justify-normal space-x-5 pt-3'>
+                      {person.linkedinUrl && (
                       <li>
                         <a href={person.linkedinUrl} className='text-gray-400 hover:text-gray-500'>
                           <span className='sr-only'>LinkedIn</span>
@@ -108,9 +121,11 @@ export default function Team() {
                           </svg>
                         </a>
                       </li>
+                      )}
+                      {person.githubUrl && (
                       <li>
-                        <a href={person.linkedinUrl} className='text-gray-400 hover:text-gray-500'>
-                          <span className='sr-only'>LinkedIn</span>
+                        <a href={person.githubUrl} className='text-gray-400 hover:text-gray-500'>
+                          <span className='sr-only'>Github</span>
                           <svg className='h-5 w-5' aria-hidden='true' fill='currentColor' viewBox='0 0 32 32'>
                             <path
                               fillRule='evenodd'
@@ -120,6 +135,7 @@ export default function Team() {
                           </svg>
                         </a>
                       </li>
+                      )}
                     </ul>
                     </div>
 
