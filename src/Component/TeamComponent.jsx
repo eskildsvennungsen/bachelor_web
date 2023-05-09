@@ -10,37 +10,45 @@ const people = [
     name: 'Javier A. Sossa',
     role: 'Test- & maskinvareansvarlig',
     imageUrl: javier,  
+    email: 'javieralvarez9803@gmail.com',
     linkedinUrl: 'https://www.linkedin.com/in/javier-alvarez-sossa-846a571b4/',
   },
   {
     name: 'Dag H. Halvorsen',
     role: 'Produksjon- & prototypeansvarlig',
     imageUrl: dag,
+    email: 'daghhalvorsen@outlook.com',
     linkedinUrl: 'https://www.linkedin.com/in/dag-henning-halvorsen-5b7903173/',
   },
   {
     name: 'Kristoffer Solheim',
     role: 'Systemingeniør & kommunikasjonsansvarlig',
     imageUrl: solheim,
+    email: 'kristoffer@solheim.in',
     linkedinUrl: 'https://www.linkedin.com/in/kristoffer-solheim-794a10259/',
+    githubUrl: 'https://github.com/krso1002',
   },
   {
     name: 'Mehdi Chamran',
     role: 'Dokumentasjon- & risikoansvarlig',
     imageUrl: mehdi,
-    linkedinUrl: '#',
+    email: 'mehdi1996@live.no',
   },
   {
     name: 'Andri V. Tryggvason',
     role: 'Prosjektleder & produkteier',
     imageUrl: andri,
+    email: 'andri@arivarton.com',
     linkedinUrl: 'https://www.linkedin.com/in/andri-tryggvason-83420776/',
+    githubUrl: 'https://github.com/arivarton',
   },
   {
     name: 'Eskild D. Svennungsen',
     role: 'Programvare- og økonomiansvarlig',
     imageUrl: eskild,
+    email: 'eskildsvennungsen@gmail.com',
     linkedinUrl: 'https://www.linkedin.com/in/eskildsvennungsen/',
+    githubUrl: 'https://github.com/eskildsvennungsen',
   },
 ];
 
@@ -75,9 +83,9 @@ export default function Team() {
       </div>
       <div className='mx-auto max-w-7xl py-24 lg:py-24 px-6'>
         <div className='space-y-12'>
-          <div className='space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none'>
-            <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl animate-once animate-flip-up'>Gruppe 5</h2>
-            <p className='text-xl text-gray-700 max-w-3xl animate-once animate-flip-down'>
+          <div>
+            <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl text-center animate-once animate-flip-up'>Gruppe 5</h2>
+            <p className='mt-6 text-lg leading-8 text-gray-900 text-center animate-once animate-flip-down'>
               Vi er HOLDT, hull- og lekkasje deteksjons teknologi. Gjennom vår-semesteret på USN Kongsberg skal vi ta for
               oss problemstillingen gitt av Tronrud Engineering.
             </p>
@@ -86,17 +94,21 @@ export default function Team() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className='rounded-lg bg-gray-800/[.15] hover:bg-gray-700/[.20] py-10 px-6 text-center xl:px-10 xl:text-left'
+                className='rounded-lg bg-blue-600/[.06] hover:bg-blue-300/[.15] py-10 px-6 text-center xl:px-10 animate-flip-down animate-once'
               >
                 <div className='space-y-6 xl:space-y-10'>
-                  <img className='mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56' src={person.imageUrl} alt='' />
-                  <div className='space-y-2 xl:flex xl:items-center xl:justify-between'>
+                  <img className='mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56 border-solid border-4 border-gray-400/[.10]' src={person.imageUrl} alt='' />
+                  <div className='space-y-2'>
                     <div className='space-y-1 text-lg font-medium leading-6'>
-                      <h3 className='text-gray-900'>{person.name}</h3>
-                      <p className='text-indigo-600'>{person.role}</p>
-                    </div>
+                      <p className='text-sm text-red-900 font-bold'>{person.role}</p>
+                      <h3 className='text-gray-900 mb-0 pb-0 font-bold'>{person.name}</h3>
 
-                    <ul className='flex justify-center space-x-5'>
+                      {person.email && (
+                        <p className='text-xs text-gray-600'>{ person.email }</p>
+                      )}
+
+                    <ul className='flex justify-center md:justify-normal space-x-5 pt-3'>
+                      {person.linkedinUrl && (
                       <li>
                         <a href={person.linkedinUrl} className='text-gray-400 hover:text-gray-500'>
                           <span className='sr-only'>LinkedIn</span>
@@ -109,9 +121,27 @@ export default function Team() {
                           </svg>
                         </a>
                       </li>
+                      )}
+                      {person.githubUrl && (
+                      <li>
+                        <a href={person.githubUrl} className='text-gray-400 hover:text-gray-500'>
+                          <span className='sr-only'>Github</span>
+                          <svg className='h-5 w-5' aria-hidden='true' fill='currentColor' viewBox='0 0 32 32'>
+                            <path
+                              fillRule='evenodd'
+                              d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z"
+                              clipRule='evenodd'
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      )}
                     </ul>
+                    </div>
+
                   </div>
                 </div>
+
               </li>
             ))}
           </ul>
