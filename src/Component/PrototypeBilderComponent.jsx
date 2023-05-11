@@ -6,11 +6,13 @@ import Lightbox from 'yet-another-react-lightbox';
 import slides from '../data/prototype_bilder';
 import "yet-another-react-lightbox/styles.css";
 
+
 export default function PrototypeBilder() {
   const [index, setIndex] = React.useState(-1);
 
   return (
     <>
+      <div className="animate-once animate-fade-up">
       <PhotoAlbum
           layout="rows"
           photos={slides}
@@ -23,6 +25,7 @@ export default function PrototypeBilder() {
           close={() => setIndex(-1)}
           slides={slides}
         />
+    </div>
     </>
   )
 }

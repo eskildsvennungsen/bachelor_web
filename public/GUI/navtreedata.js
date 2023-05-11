@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "SRRP GUI", "index.html", [
+    [ "SRRP - GUI", "index.html", "index" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

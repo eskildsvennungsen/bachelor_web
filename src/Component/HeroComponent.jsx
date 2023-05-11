@@ -34,8 +34,8 @@ export default function Hero() {
         <div className='py-24 relative px-6 lg:px-8'>
           <div className='mx-auto max-w-2xl py-32 sm:py-48 lg:py-56'>
             <div className='text-center'>
-              <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl'>Fremtidens pakketeknologi</h1>
-              <p className='mt-6 text-lg leading-8 text-gray-600'>
+              <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-8xl animate-flip-up animate-once'>Fremtidens pakketeknologi</h1>
+              <p className='mt-6 text-lg leading-8 text-gray-600 animate-flip-down animate-once'>
                 Vi i HOLDT har fått i bachelor-oppgave av{' '}
                 <span className='underline decoration-red-500 decoration-2 bg-red-100 hover:bg-red-200'>
                   <a href='https://www.tronrud.no/en/' target="_blank" rel="noopener noreferrer">Tronrud Engineering</a>
