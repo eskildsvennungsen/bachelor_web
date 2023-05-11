@@ -44,7 +44,7 @@ const people = [
   },
   {
     name: 'Eskild D. Svennungsen',
-    role: 'Programvare- og økonomiansvarlig',
+    role: 'Programvare- & økonomiansvarlig',
     imageUrl: eskild,
     email: 'eskildsvennungsen@gmail.com',
     linkedinUrl: 'https://www.linkedin.com/in/eskildsvennungsen/',
@@ -84,8 +84,8 @@ export default function Team() {
       <div className='mx-auto max-w-7xl py-24 lg:py-24 px-6'>
         <div className='space-y-12'>
           <div>
-            <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl text-center animate-once animate-flip-up'>Gruppe 5</h2>
-            <p className='mt-6 text-lg leading-8 text-gray-900 text-center animate-once animate-flip-down'>
+            <h2 className='text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl text-center'>Gruppe 5</h2>
+            <p className='mt-6 text-lg leading-8 text-gray-900 text-center'>
               Vi er HOLDT, hull- og lekkasje deteksjons teknologi. Gjennom vår-semesteret på USN Kongsberg skal vi ta for
               oss problemstillingen gitt av Tronrud Engineering.
             </p>
@@ -94,7 +94,7 @@ export default function Team() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className='rounded-lg bg-blue-600/[.06] hover:bg-blue-300/[.15] py-10 px-6 text-center xl:px-10 animate-flip-down animate-once'
+                className='rounded-lg bg-blue-600/[.06] hover:bg-blue-300/[.15] py-10 px-6 text-center xl:px-10'
               >
                 <div className='space-y-6 xl:space-y-10'>
                   <img className='mx-auto h-40 w-40 rounded-full xl:h-56 xl:w-56 border-solid border-4 border-gray-400/[.10]' src={person.imageUrl} alt='' />

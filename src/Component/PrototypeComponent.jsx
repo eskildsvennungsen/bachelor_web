@@ -24,10 +24,10 @@ export default function Prototype() {
         </div>
         <div className="mx-auto max-w-2xl py-12 sm:py-20 lg:py-32">
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl animate-once animate-flip-up">
+            <h1 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">
               Prototypen
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-900 animate-once animate-flip-down">
+            <p className="mt-6 text-lg leading-8 text-gray-900">
               I samarbeid med Tronrud Engineering har vi fått muligheten til å produsere vår egen prototype. Prototypen er ennå under utvikling men du vil få mulighet til å se den i aksjon ved USN Expoen i Kongsberg den 24. mai.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">

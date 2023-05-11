@@ -6,6 +6,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import slides from '../data/prototype_bilder';
 import "yet-another-react-lightbox/styles.css";
 
+
 export default function PrototypeBilder() {
   const [index, setIndex] = React.useState(-1);
 

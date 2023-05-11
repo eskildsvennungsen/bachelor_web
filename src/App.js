@@ -19,7 +19,7 @@ function App() {
           <Route exact path='/grupper/D05-23' element={<Hjem />}></Route>
           <Route exact path='/grupper/D05-23/prototype' element={<PrototypePage />}></Route>
           <Route exact path='/grupper/D05-23/omoss' element={<Omoss />}></Route>
-          <Route exact path='*' element={<PageNotFound />}></Route>
+          <Route path='*' element={<PageNotFound />}></Route>
         </Routes>
       </Router>
     </>
