@@ -9,7 +9,7 @@ const Twitch = () => {
   };
   
   return (
-    <TwitchPlayer channel="holdt_bachelor" autoplay muted withChat={false} darkMode={false} onVideoReady={handleReady} hideControls={true} width={"100%"} height={600} class="mx-auto my-4"/>
+    <TwitchPlayer channel="holdt_bachelor" autoplay withChat={false} darkMode={false} onVideoReady={handleReady} hideControls={true} width={"100%"} height={600} class="mx-auto my-4"/>
   );
 };
 
